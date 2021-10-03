@@ -36,7 +36,7 @@ hs_err_pid*
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # Intellij
-.idea/*
+.idea
 /out/
 ## File-based project format:
 *.iws
