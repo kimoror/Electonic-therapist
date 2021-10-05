@@ -72,14 +72,19 @@ public class Therapist {
         switch (currentClient.getPainType()){
             case 1:
                 headHealing();
+                break;
             case 2:
                 bellyHealing();
+                break;
             case 3:
                 blackEyeHealing();
+                break;
             case 4:
                 temperatureHealing();
+                break;
             case 5:
                 coldHealing();
+                break;
         }
      }
 
@@ -105,7 +110,7 @@ public class Therapist {
             final boolean covidSmells= getClientHealingAnswer();
             System.out.println(QuestionsBase.COUGH.getQuestion());
             final boolean covidCough= getClientHealingAnswer();
-            if(covidCough && covidSmells){
+            if(covidCough && !covidSmells){
                 System.out.println("Ваш диагноз: У вас Ковид. Оставайтесь дома, вы посажены на самоизоляцию.");
             }
         } else{
